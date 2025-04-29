@@ -10,15 +10,15 @@ This project is a smart government tender tracking and bid matching system that:
 
 ## 📄 Table of Contents
 
-- [🔍 About](#-about)
-- [✨ Features](#-features)
-- [🧰 Tech Stack](#-tech-stack)
-- [⚙️ Installation](#️-installation)
-- [🚀 Usage](#-usage)
-- [🛠 Configuration](#-configuration)
-- [📷 Screenshots](#-screenshots)
-- [🧾 License](#-license)
-- [📬 Contact](#-contact)
+- About
+- Features
+- Tech Stack
+- Installation
+- Usage
+- Configuration
+- Screenshots
+- License
+- Contact
 
 ---
 
@@ -57,10 +57,44 @@ It helps companies identify relevant tender opportunities efficiently and accura
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/yourusername/tender-matcher.git
-cd tender-matcher
+     git clone https://github.com/yourusername/tender-matcher.git
+
+     cd tender-matcher 
+
+2. **Install dependencies**
+
+     pip install -r requirements.txt
+
+## Usage
+1. **Start the Scraper**
+    Fetches tenders from listed portals and logs them to tenders.csv.
+    python scraper.py
+    The scraper runs continuously and updates data every 15 minutes.
+
+2. **Run the Streamlit App**
+    Launches the dashboard interface.
+    streamlit run matcher_app.py
+    Here you can:
+    
+    Enter your company's domain of expertise
+    
+    View relevant tenders sorted by match %
+    
+    Set up email notifications
+
+## Configuration
+ **Email Setup**
+    In matcher_app.py, configure your email details:
+    
+    sender_email = "your-email@gmail.com"
+    sender_app_password = "your-app-password"
+    Note: Use an App Password if using Gmail.
+
+**Matching Threshold**
+    Adjust the similarity threshold in match_tenders() function in app.py:
+    
+    threshold = 0.5  # Lower = more matches, Higher = stricter
