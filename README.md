@@ -8,7 +8,7 @@ This project is a smart government tender tracking and bid matching system that:
 
 ---
 
-## 📄 Table of Contents
+## Table of Contents
 
 - About
 - Features
@@ -16,13 +16,11 @@ This project is a smart government tender tracking and bid matching system that:
 - Installation
 - Usage
 - Configuration
-- Screenshots
-- License
-- Contact
+- Conclusion
 
 ---
 
-## 🔍 About
+## About
 
 Manual tracking of government tenders across multiple platforms is tedious and inefficient. This project automates the process of:
 - Scraping tenders from official portals,
@@ -33,18 +31,18 @@ It helps companies identify relevant tender opportunities efficiently and accura
 
 ---
 
-## ✨ Features
+## Features
 
-- 🕷 Automated web scraping from major tender portals (NIC, Tamil Nadu, Kerala, etc.)
-- 🔎 NLP-based semantic matching using `SentenceTransformer` models
-- 📤 Real-time email alerts for matched tenders (optional)
-- 📊 Interactive tender view in Streamlit interface
-- 🧾 CSV-based logging and tracking of fetched tenders
-- ⏱ Periodic scraping (every 15 minutes by default)
+- Automated web scraping from major tender portals (NIC, Tamil Nadu, Kerala, etc.)
+- NLP-based semantic matching using `SentenceTransformer` models
+- Real-time email alerts for matched tenders (optional)
+- Interactive tender view in Streamlit interface
+- CSV-based logging and tracking of fetched tenders
+- Periodic scraping (every 15 minutes by default)
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Component             | Description                          |
 |-----------------------|--------------------------------------|
@@ -61,7 +59,7 @@ It helps companies identify relevant tender opportunities efficiently and accura
 
 1. **Clone the repository**
 
-     git clone https://github.com/yourusername/tender-matcher.git
+     git clone https://github.com/thivakaran-mnm/Government-Tender-Tracker-Bid-Match-Recommender.git
 
      cd tender-matcher 
 
@@ -98,3 +96,12 @@ It helps companies identify relevant tender opportunities efficiently and accura
     Adjust the similarity threshold in match_tenders() function in app.py:
     
     threshold = 0.5  # Lower = more matches, Higher = stricter
+
+## Conclusion
+
+The Government Tender Tracker & Bid Matching App simplifies the process of identifying and tracking government tenders that match a company's profile. By leveraging Selenium for web scraping, Sentence Transformers for text similarity matching, and Streamlit for a user-friendly interface, this application provides a seamless experience for businesses to stay informed about relevant tenders.
+
+The project automates tender data collection, performs intelligent matching using NLP, and sends email notifications for tenders that align with the company’s interests. With an easy-to-use web interface, users can upload their company profiles and receive real-time alerts about suitable tenders, saving time and improving efficiency.
+
+This app is a powerful tool for businesses looking to engage with government procurement opportunities, helping them stay ahead in the bidding process.
+                                                  
