@@ -93,9 +93,9 @@ It helps companies identify relevant tender opportunities efficiently and accura
     Note: Use an App Password if using Gmail.
 
 **Matching Threshold**
-    Adjust the similarity threshold in match_tenders() function in app.py:
+  Adjust the similarity threshold in match_tenders() function in app.py:
     
-    threshold = 0.5  # Lower = more matches, Higher = stricter
+  threshold = 0.5  # Lower = more matches, Higher = stricter
 
 ## Conclusion
 
